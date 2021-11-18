@@ -1,21 +1,20 @@
 import React from 'react'
 import Usa from '../../../../../assets/flag-usa.png'
-import {Dropdown} from 'react-bootstrap'
 
 function Lang() {
     return (
         <div className="lang">
-            <Dropdown>
-                <Dropdown.Toggle variant="link" id="dropdown-basic">
-                <img src={Usa} alt="USA" />   Eng / $
-                </Dropdown.Toggle>
+            <div className="dropdown">
+                <button className="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src={Usa} alt="USA" />   Eng / $
+                </button>
+                <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a className="dropdown-item" href="#">Eng / $</a></li>
+                    <li><a className="dropdown-item" href="#">Rus / </a></li>
+                    <li><a className="dropdown-item" href="#">Ukr /</a></li>
+                </ul>
+            </div>
 
-                <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Eng / $</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">Rus / </Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">Ukr / </Dropdown.Item>
-                </Dropdown.Menu>
-            </Dropdown>
         </div>
     )
 }

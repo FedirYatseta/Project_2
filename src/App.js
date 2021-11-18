@@ -1,6 +1,6 @@
 
 import './css/style.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header/Header';
 
 function App() {
@@ -10,5 +10,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

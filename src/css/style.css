@@ -285,5 +285,46 @@ body {
     letter-spacing: 0.5px;
     /* white */
     color: #FFFFFF; } }
+.modal_reg {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+  z-index: 1000; }
+
+.modal_reg.active_reg {
+  opacity: 1;
+  pointer-events: all; }
+
+.modal_content_reg {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  transform: scale(0.5);
+  transition: 0.4s all;
+  width: 25vw; }
+
+.modal_content_reg.active_reg {
+  transform: scale(1); }
+
+.modal_text_h6 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  /* or 21px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* gray/700 */
+  color: #787A80; }
 
 /*# sourceMappingURL=style.css.map */

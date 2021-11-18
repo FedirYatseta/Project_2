@@ -4,19 +4,19 @@ import Offers from './Nav/Offers/Offers'
 import Slider from './Nav/Slider/Slider'
 
 const Header = () => {
-    return (
+   return (
       <div>
-       <div className="header">
-          <Navbar />
-       </div>
-      <div className="special-offers-section">
-         <Offers />
+         <div className="header">
+            <Navbar />
+         </div>
+         <div className="special-offers-section">
+            <Offers />
+         </div>
+         <div className="slider-section">
+            <Slider />
+         </div>
       </div>
-      <div className="slider-section">
-         <Slider />
-      </div>
-       </div>
-    )
+   )
 }
 
 export default Header
