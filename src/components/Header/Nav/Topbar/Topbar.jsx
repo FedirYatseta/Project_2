@@ -6,13 +6,13 @@ const Topbar = () => {
     return (
         <div className="top-nav-section">
             <div className='row'>
-                <a href="tel:4055550128"> Available 24/7 at  (405) 555-0128</a> 
+                <a href="tel:4055550128" className="text-light text-decoration-none"> Available 24/7 at  (405) 555-0128</a> 
             </div>
             <div className='row min-menu-block'>
-                    <a className='col'>Delivery & returns</a>
-                    <a className='col'>Track order</a>
-                    <a className='col'>Blog</a>
-                    <a className='col'>Contacts</a>
+                    <a href="#" className='col text-light text-decoration-none'>Delivery & returns</a>
+                    <a href="#" className='col text-light text-decoration-none'>Track order</a>
+                    <a href="#" className='col text-light text-decoration-none'>Blog</a>
+                    <a href="#" className='col text-light text-decoration-none'>Contacts</a>
             </div>
             <div className='row'>
                 <Lang />
