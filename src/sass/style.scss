@@ -75,10 +75,19 @@ body {
   color: white;
   text-shadow: 0 1px 2px rgba(0,0,0,.6);
 }
-.carousel-custom-ind{
- position: fixed;
- top:600px ;
+.slider-section-custom{
+  position:relative; 
+  width:100%;
+  margin:0 auto;
 }
+
+.carousel-custom-ind{
+  top:40px; 
+}
+// .carousel-custom-ind{
+//  position: fixed;
+//  top:600px ;
+// }
 .carousel .carousel-custom-ind [data-bs-target] {
   width: 175px;
   height: 1px;
