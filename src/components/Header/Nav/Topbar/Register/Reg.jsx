@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import FormReg from './Modal/FormReg'
-import RegModalView from './Modal/RegModalView'
+import FormReg from './Modal/SignIn'
+import RegModalView from './Modal/ModalSignView'
 
 function Reg() {
 
