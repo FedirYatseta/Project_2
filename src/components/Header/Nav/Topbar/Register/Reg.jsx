@@ -10,9 +10,9 @@ function Reg() {
 
     return (
         <div>
-            <NavLink to="/login" type="button" className="text-light text-decoration-none" onClick={() => setModalActive(true)}>Log in / Register</NavLink>
+            <a  type="button" className="text-light text-decoration-none" onClick={() => setModalActive(true)}>Log in / Register</a>
             <RegModalView active={modalActive} setActive={setModalActive} >
-                {/* <FormReg /> */}
+                <FormReg />
             </RegModalView>
         </div>
     )

@@ -22,7 +22,7 @@ function App() {
         {/*
         <Arrivals />
        */}
-        <div className="container">
+        <div className="content-body">
           <Routes>
             <Route path="/" element={<Content />} />
             <Route path="/women" element={ <Women />} />
