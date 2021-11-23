@@ -1,6 +1,7 @@
 import React from 'react'
 
-function SignUp() {
+
+function SignUp({ setToken }) {
     return (
         <div>
             <form className="px-4 py-3">

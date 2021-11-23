@@ -12,9 +12,6 @@ const Header = () => {
          <div className="special-offers-section">
             <Offers />
          </div>
-         <div className="slider-section">
-            <Slider />
-         </div>
       </div>
    )
 }

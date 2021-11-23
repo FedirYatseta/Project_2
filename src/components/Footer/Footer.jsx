@@ -59,7 +59,7 @@ function Footer() {
             <div className="col">
                 <div className="footer-line"></div>
             </div>
-            <div className="row my-4">
+            <div className="d-flex my-4">
                 <div className="col d-flex justify-content-center">© All rights reserved. Made with by Createx Studio </div>
                 <div className="col d-flex justify-content-center">
                     <ScrollButton />
