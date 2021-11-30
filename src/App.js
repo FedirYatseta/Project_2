@@ -13,6 +13,7 @@ import Slider from './components/Header/Nav/Slider/Slider';
 import Content from './components/Content/Content';
 import NotFound from './components/NotFound/NotFound';
 import Women from './components/Content/Women/Women';
+import Subscribe from './components/SectionSub/Subscribe';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         </div>
 
         {/* <Route path="/man" render={() => <FormReg />} /> */}
+        <Subscribe />
         <Footer />
       </BrowserRouter>
      

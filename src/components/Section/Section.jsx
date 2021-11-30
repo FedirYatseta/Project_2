@@ -8,16 +8,45 @@ function Section() {
         <div className="d-flex justify-content-center ">
             <div className="row section_type_male">
                 <div className="col block_section_male">
-                    <img src={man} className="img-fluid"></img>
-                    <p className="d-flex justify-content-center">Men’s</p>
+                    <div className="hovereffect">
+                        <img className="img-responsive" src={man} alt="" />
+                        <div className="overlay">
+                            <h2>Men’s</h2>
+                            <a className="info" href="#"></a>
+                        </div>
+                    </div>
+                    {/* <img src={man} className="img-fluid"></img>
+                    <p className="d-flex justify-content-center">Men’s</p> */}
                 </div>
                 <div className="col">
-                    <img src={wom} className="img-fluid"></img>
-                    <p className="d-flex justify-content-center">Women’s</p>
+                    <div className="col block_section_male">
+                        <div className="hovereffect">
+                            <img className="img-responsive" src={wom} alt="" />
+                            <div className="overlay">
+                                <h2>Women’s</h2>
+                                <a className="info" href="#"></a>
+                            </div>
+                        </div>
+                        {/* <img src={man} className="img-fluid"></img>
+                    <p className="d-flex justify-content-center">Men’s</p> */}
+                    </div>
+                    {/* <img src={wom} className="img-fluid"></img>
+                    <p className="d-flex justify-content-center">Women’s</p> */}
                 </div>
                 <div className="col">
-                    <img src={kid} className="img-fluid"></img>
-                    <p className="d-flex justify-content-center">Kids’</p>
+                    <div className="col block_section_male">
+                        <div className="hovereffect">
+                            <img className="img-responsive" src={kid} alt="" />
+                            <div className="overlay">
+                                <h2>Kids’</h2>
+                                <a className="info" href="#"></a>
+                            </div>
+                        </div>
+                        {/* <img src={man} className="img-fluid"></img>
+                    <p className="d-flex justify-content-center">Men’s</p> */}
+                    </div>
+                    {/* <img src={kid} className="img-fluid"></img>
+                    <p className="d-flex justify-content-center">Kids’</p> */}
                 </div>
             </div>
         </div>

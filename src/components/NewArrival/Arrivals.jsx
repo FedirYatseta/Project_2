@@ -6,7 +6,7 @@ function Arrivals() {
         <div className="arrivals-section">
             <div className="row">
                 <h1 className=" d-flex justify-content-center align-item-center my-5">New arrivals</h1>
-                <h6 className=" d-flex justify-content-center align-item-center my-4"> Check out our latest arrivals for the upcoming season
+                <h6 className=" d-flex justify-content-center align-item-center my-4"> Check out our latest arrivals htmlFor the upcoming season
                     See the collection here</h6>
                 <div className="slider_arrivals">
                     <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
@@ -20,9 +20,10 @@ function Arrivals() {
                             <div className="carousel-item active">
                                 <div className="d-flex">
                                     <div className="mx-2">
-                                        <img src={cap} className="slider-img-arrival" alt="..." />
+
+                                        {/* <img src={cap} className="slider-img-arrival" alt="..." />
                                         <p>Black and white sport cap</p>
-                                        <p>$18.15</p>
+                                        <p>$18.15</p> */}
                                     </div>
                                     <div className="mx-2">
                                         <img src={cap} className="slider-img-arrival" alt="..." />

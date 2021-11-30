@@ -18,7 +18,7 @@ async function loginUser(credentials) {
    }
 
 
-function SignIn({ setToken }) {
+function SignIn({setToken }) {
     const [modalActive, setModalActive] = useState()
 
     const [username, setUserName] = useState();

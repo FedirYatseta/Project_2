@@ -7,10 +7,10 @@ function Footer() {
 
 
     return (
-        <div className="footer-section  ">
-            <div className="col d-flex justify-content-center">
-                <div className="row">
-                    <div className="col mx-5 my-5">
+        <div className="footer-section">
+            <div className="container col">
+                <div className="row d-flex justify-content-between">
+                    <div className="col me-5 my-5">
                         <h4 className="footer-title-list">HELP</h4>
                         <ul className="list-group">
                             <li ><a href="" className="text-decoration-none">Delivery & returns</a></li>
@@ -39,18 +39,18 @@ function Footer() {
                                 <a href="mail:hello@createx.com" >Email: hello@createx.com</a>
                             </li>
                         </ul>
-                        <div className="footer-icon-block">
-                            <i className="fab fa-instagram px-2 py-2 mx-1 footer-icon-item"></i>
-                            <i className="fab fa-facebook px-2 py-2 mx-1 footer-icon-item"></i>
-                            <i className="fab fa-twitter px-2 py-2 mx-1 footer-icon-item"></i>
-                            <i className="fab fa-youtube px-2 py-2 mx-1 footer-icon-item"></i>
-                            <i className="fab fa-pinterest px-2 py-2 mx-1 footer-icon-item"></i>
+                        <div className="footer-icon-block my-4">
+                            <i className="fab fa-instagram px-2 py-2 me-2 footer-icon-item"></i>
+                            <i className="fab fa-facebook px-2 py-2 me-2 footer-icon-item"></i>
+                            <i className="fab fa-twitter px-2 py-2 me-2 footer-icon-item"></i>
+                            <i className="fab fa-youtube px-2 py-2 me-2 footer-icon-item"></i>
+                            <i className="fab fa-pinterest px-2 py-2  footer-icon-item"></i>
                         </div>
                     </div>
-                    <div className="col mx-5 my-5">
+                    <div className="col ms-5 my-5">
                         <h4 className="footer-title-list">Download our app</h4>
                         <div className="d-flex">
-                            <img src={apple} className="mx-1 my-1"></img>
+                            <img src={apple} className="me-2 my-1"></img>
                             <img src={android} className="mx-1 my-1"></img>
                         </div>
                     </div>
@@ -59,9 +59,9 @@ function Footer() {
             <div className="col">
                 <div className="footer-line"></div>
             </div>
-            <div className="d-flex my-4">
-                <div className="col d-flex justify-content-center">© All rights reserved. Made with by Createx Studio </div>
-                <div className="col d-flex justify-content-center">
+            <div className="container d-flex my-4 ">
+                <div className="col d-flex justify-content-start">© All rights reserved. Made with by Createx Studio </div>
+                <div className="col d-flex justify-content-end">
                     <ScrollButton />
                 </div>
             </div>

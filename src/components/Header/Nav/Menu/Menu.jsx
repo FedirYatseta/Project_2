@@ -57,7 +57,7 @@ function Menu() {
         //         </nav>
         //     </div>
         //     <div className="col">
-        //         <input type="text" placeholder="search for Products"></input>
+        //         <input type="text" placeholder="search htmlFor Products"></input>
         //     </div>
         //     <div className="col">
         //         <i className="fas fa-shopping-cart"></i>
