@@ -1,17 +1,9 @@
 import React, { useState, useRef } from 'react'
 import filter from "../../../assets/Vector_btn.png"
 import { useSpring, animated } from "react-spring"
+import AnimButton from '../../Button/AnimButton'
 function Women() {
 
-    const [open, toggle] = useState(false)
-    const {x,rotate} = useSpring({
-        from: { x: 1, rotate: '180deg' },
-        x: open ? 1 : 0,
-        config: { duration: 1000 },
-        // x: open ? 1 : 0,
-        // config:{ duration: 200 },
-
-    })
 
     return (
         <div className="container overflow-hidden">
@@ -44,115 +36,28 @@ function Women() {
                             </div>
                             <div className='mx-2 sub-text-item'>products per page</div>
                         </div>
-                        <div className="d-flex align-items-center">
-                            <nav aria-label="Page navigation example">
-                                <ul className="pagination d-flex justify-content-end align-items-center">
-                                    <li className="page-item disabled">
-                                        <a className="page-link">Previous</a>
-                                    </li>
-                                    <li className="page-item"><a className="page-link" href="#">1</a></li>
-                                    <li className="page-item"><a className="page-link" href="#">2</a></li>
-                                    <li className="page-item"><a className="page-link" href="#">3</a></li>
-                                    <li className="page-item">
-                                        <a className="page-link" href="#">Next</a>
-                                    </li>
+                        <div className="d-flex align-items-center paginator-style">
+                                <ul className="d-flex p-0 m-0">
+                                    <li className="mx-1"><a className="page-item-link text-decoration-none" href="#">1</a></li>
+                                    <li className="mx-1"><a className="page-item-link text-decoration-none" href="#">2</a></li>
+                                    <li className="mx-1"><a className="page-item-link text-decoration-none" href="#">3</a></li>
                                 </ul>
-                            </nav>
                         </div>
                     </div>
                 </div>
                 <div className="col-3">
-                    <div className="">
-                        <div className="">
-                            <p className="d-grid gap-2">
-                                <button
-                                    className="btn text-start c-s-b"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapseClothes"
-                                    aria-expanded="false"
-                                    aria-controls="collapseClothes"
-                                    onClick={() => toggle(!open)}>
-                                    Clothes
-                                    <animated.span style={{
-                                        opacity: x.to({ range: [0, 1], output: [0.3, 1] }),
-                                        scale: x.to({
-                                            range: [0, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 1],
-                                            output: [1, 0.97, 0.9, 1.1, 0.9, 1.1, 1.03, 1],
-                                        }),
-                                        transform: rotate.to({range: [0, 360], output: [0, 90] } )
-                                    }
-                                    } 
-                                   >
-
-                                </animated.span>
-
-                                <animated.span >
-                                </animated.span>
-
-                            </button>
-                        </p>
-                        <div className="collapse" id="collapseClothes">
-                            <form className="form-group">
-                                <ul className="list-group">
-                                    <li className="my-1">
-                                        <input className="mx-auto form-control" type="search" placeholder="Search" aria-label="Search" />
-                                    </li>
-                                    <li className="my-1" >
-                                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                        <label className="form-check-label mx-1" htmlFor="flexCheckDefault">
-                                            Coats (16)
-                                        </label>
-                                    </li>
-                                    <li className="my-1">
-                                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                        <label className="form-check-label mx-1" htmlFor="flexCheckDefault">
-                                            Coats (16)
-                                        </label>
-                                    </li>
-                                    <li className="my-1"> <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                        <label className="form-check-label mx-1" htmlFor="flexCheckDefault">
-                                            Coats (16)
-                                        </label>
-                                    </li>
-                                </ul>
-                            </form>
-                        </div>
-                    </div>
-                    {/* <div className='my-4'>
-                            <p className="d-grid gap-2">
-                            <button className="btn text-start c-s-b" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSize" aria-expanded="false" aria-controls="collapseSize" onClick={() => setAnimationActive2(!animationActive2)}>
-                                    Size
-                                    <Spring
-                                        immediate={!myRef2.current}
-                                        reset={true}
-                                        from={{  transform: "rotate(0deg)" }}
-                                        to={{  transform: "rotate(180deg)" }}
-                                        config={{ duration: 200 }}
-                                        reverse={!animationActive2}>
-                                        {styles => (
-                                            <animated.span style={styles}  ref={myRef2}>
-                                            </animated.span>
-                                        )}
-                                    </Spring>
-                                    <Spring
-                                        immediate={!myRef2.current}
-                                        reset={true}
-                                        from={{ transform: "rotate(0deg)" }}
-                                        to={{ transform: "rotate(90deg)" }}
-                                        config={{ duration: 200 }}
-                                        reverse={!animationActive2}>
-                                        {styles => (
-                                            <animated.span style={styles}  ref={myRef2}>
-                                            </animated.span>
-                                        )}
-                                    </Spring>
-                                </button>
+                    <div>
+                        <div>
+                            <p>
+                            <AnimButton text={'Clothes'} typeButton={'collapseClothes'} typeButtonTarget={"#collapseClothes"}/>
                             </p>
-                            <div className="collapse" id="collapseSize">
+                            <div className="collapse" id="collapseClothes">
                                 <form className="form-group">
                                     <ul className="list-group">
                                         <li className="my-1">
+                                            <input className="mx-auto form-control" type="search" placeholder="Search" aria-label="Search" />
+                                        </li>
+                                        <li className="my-1" >
                                             <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                                             <label className="form-check-label mx-1" htmlFor="flexCheckDefault">
                                                 Coats (16)
@@ -164,8 +69,7 @@ function Women() {
                                                 Coats (16)
                                             </label>
                                         </li>
-                                        <li className="my-1">
-                                            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                        <li className="my-1"> <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                                             <label className="form-check-label mx-1" htmlFor="flexCheckDefault">
                                                 Coats (16)
                                             </label>
@@ -173,14 +77,45 @@ function Women() {
                                     </ul>
                                 </form>
                             </div>
-                        </div> */}
+                        </div>
+                        <div>
+                            <p>
+                                <AnimButton text={'Size'} typeButton={'collapseSize'} typeButtonTarget={"#collapseSize"}/>
+                            </p>
+                            <div className="collapse" id="collapseSize">
+                                <form className="form-group">
+                                    <ul className="list-group">
+                                        <li className="my-1">
+                                            <input className="mx-auto form-control" type="search" placeholder="Search" aria-label="Search" />
+                                        </li>
+                                        <li className="my-1" >
+                                            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                            <label className="form-check-label mx-1" htmlFor="flexCheckDefault">
+                                                Coats (16)
+                                            </label>
+                                        </li>
+                                        <li className="my-1">
+                                            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                            <label className="form-check-label mx-1" htmlFor="flexCheckDefault">
+                                                Coats (16)
+                                            </label>
+                                        </li>
+                                        <li className="my-1"> <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                            <label className="form-check-label mx-1" htmlFor="flexCheckDefault">
+                                                Coats (16)
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-9">
+                    <div>Element</div>
                 </div>
             </div>
-            <div className="col-9">
-                <div>Element</div>
-            </div>
         </div>
-        </div >
     )
 }
 
