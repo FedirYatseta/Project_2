@@ -7,7 +7,7 @@ function Menu() {
         <div className="container">
             <nav className="navbar navbar-expand-lg navbar-light bg-none">
                 <div className="container-fluid">
-                    <NavLink to="/" className="navbar-brand" ><img src={logo} /></NavLink>
+                    <NavLink to="/" className="navbar-brand" ><img src={logo} alt="logo" /></NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -39,31 +39,7 @@ function Menu() {
                     </div>
                 </div>
             </nav>
-            
         </div>
-
-
-        // <div className="row">
-        //     <div className="col">
-        //         <img src={logo}></img>
-        //     </div>
-        //     <div className="col">
-        //         <nav className="">
-        //             <a href="https://#" >Women</a>
-        //             <a href="https://#" className="mx-1">Men</a>
-        //             <a href="https://#" className="mx-1">Girls</a>
-        //             <a href="https://#" className="mx-1">Boys</a>
-        //             <a href="https://#" className="mx-1">Sale</a>
-        //         </nav>
-        //     </div>
-        //     <div className="col">
-        //         <input type="text" placeholder="search htmlFor Products"></input>
-        //     </div>
-        //     <div className="col">
-        //         <i className="fas fa-shopping-cart"></i>
-        //         <i className="far fa-heart"></i>
-        //     </div>
-        // </div>
     )
 }
 

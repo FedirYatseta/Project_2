@@ -1,6 +1,5 @@
-import React, { useState, useRef } from 'react'
+import React from 'react'
 import filter from "../../../assets/Vector_btn.png"
-import { useSpring, animated } from "react-spring"
 import AnimButton from '../../Button/AnimButton'
 function Women() {
 
@@ -10,7 +9,7 @@ function Women() {
             <div className="row gx-5">
                 <div className="col-3 mt-2">
                     <div className="d-grid gap-2 ">
-                        <button type="button" className="btn style-button-filter"> <img src={filter} /> Hide filters</button>
+                        <button type="button" className="btn style-button-filter"> <img src={filter}  alt="filter"/> Hide filters</button>
                     </div>
                 </div>
                 <div className="col-9 mt-2">
@@ -22,9 +21,9 @@ function Women() {
                                     popularity
                                 </button>
                                 <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a className="dropdown-item" href="#">popularity</a></li>
-                                    <li><a className="dropdown-item" href="#">new</a></li>
-                                    <li><a className="dropdown-item" href="#">rich</a></li>
+                                    <li><a className="dropdown-item" href="#section">popularity</a></li>
+                                    <li><a className="dropdown-item" href="#section">new</a></li>
+                                    <li><a className="dropdown-item" href="#section">rich</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -38,9 +37,9 @@ function Women() {
                         </div>
                         <div className="d-flex align-items-center paginator-style">
                                 <ul className="d-flex p-0 m-0">
-                                    <li className="mx-1"><a className="page-item-link text-decoration-none" href="#">1</a></li>
-                                    <li className="mx-1"><a className="page-item-link text-decoration-none" href="#">2</a></li>
-                                    <li className="mx-1"><a className="page-item-link text-decoration-none" href="#">3</a></li>
+                                    <li className="mx-1"><a className="page-item-link text-decoration-none" href="#section">1</a></li>
+                                    <li className="mx-1"><a className="page-item-link text-decoration-none" href="#section">2</a></li>
+                                    <li className="mx-1"><a className="page-item-link text-decoration-none" href="#section">3</a></li>
                                 </ul>
                         </div>
                     </div>
