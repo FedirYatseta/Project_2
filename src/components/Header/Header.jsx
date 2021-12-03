@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from './Nav/Navbar'
 import Offers from './Nav/Offers/Offers'
-import Slider from './Nav/Slider/Slider'
 
 const Header = () => {
    return (

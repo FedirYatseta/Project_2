@@ -37,7 +37,7 @@ function Subscribe() {
                         </div>
                     </div>
                     <div className="col d-flex justify-content-center my-5">
-                            <img className="" src={sub}></img>
+                            <img className="" src={sub} alt="sub"></img>
                     </div>
                 </div>
 

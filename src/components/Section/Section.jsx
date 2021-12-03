@@ -12,7 +12,7 @@ function Section() {
                         <img className="img-responsive" src={man} alt="" />
                         <div className="overlay">
                             <h2>Men’s</h2>
-                            <a className="info" href="#"></a>
+                            <a className="info" href="#section"> </a>
                         </div>
                     </div>
                     {/* <img src={man} className="img-fluid"></img>
@@ -24,7 +24,7 @@ function Section() {
                             <img className="img-responsive" src={wom} alt="" />
                             <div className="overlay">
                                 <h2>Women’s</h2>
-                                <a className="info" href="#"></a>
+                                <a className="info" href="#section"> </a>
                             </div>
                         </div>
                         {/* <img src={man} className="img-fluid"></img>
@@ -39,7 +39,7 @@ function Section() {
                             <img className="img-responsive" src={kid} alt="" />
                             <div className="overlay">
                                 <h2>Kids’</h2>
-                                <a className="info" href="#"></a>
+                                <a className="info" href="#section"> </a>
                             </div>
                         </div>
                         {/* <img src={man} className="img-fluid"></img>
