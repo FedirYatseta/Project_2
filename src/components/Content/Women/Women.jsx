@@ -106,6 +106,7 @@ function Women() {
                         </div>
                     </div>
                 </div>
+                
                 <div className="col-9">
                     <div>Element</div>
                 </div>
