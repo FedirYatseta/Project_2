@@ -1,4 +1,4 @@
-import React  from 'react'
+import React from 'react'
 import filter from "../../../assets/Vector_btn.png"
 import AnimButton from '../../Button/AnimButton'
 function Women() {
@@ -9,7 +9,7 @@ function Women() {
             <div className="row gx-5">
                 <div className="col-3 mt-2">
                     <div className="d-grid gap-2 ">
-                        <button type="button" className="btn style-button-filter"> <img src={filter} alt="filter"/> Hide filters</button>
+                        <button type="button" className="btn style-button-filter"> <img src={filter} alt="filter" /> Hide filters</button>
                     </div>
                 </div>
                 <div className="col-9 mt-2">
@@ -36,20 +36,18 @@ function Women() {
                             <div className='mx-2 sub-text-item'>products per page</div>
                         </div>
                         <div className="d-flex align-items-center paginator-style">
-                                <ul className="d-flex p-0 m-0">
-                                    <li className="mx-1"><a className="page-item-link text-decoration-none" href="#section">1</a></li>
-                                    <li className="mx-1"><a className="page-item-link text-decoration-none" href="#section">2</a></li>
-                                    <li className="mx-1"><a className="page-item-link text-decoration-none" href="#section">3</a></li>
-                                </ul>
+                            <ul className="d-flex p-0 m-0">
+                                <li className="mx-1"><a className="page-item-link text-decoration-none" href="#section">1</a></li>
+                                <li className="mx-1"><a className="page-item-link text-decoration-none" href="#section">2</a></li>
+                                <li className="mx-1"><a className="page-item-link text-decoration-none" href="#section">3</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
                 <div className="col-3">
                     <div>
                         <div>
-                            <p>
-                            <AnimButton text={'Clothes'} typeButton={'collapseClothes'} typeButtonTarget={"#collapseClothes"}/>
-                            </p>
+                            <AnimButton text={'Clothes'} typeButton={'collapseClothes'} typeButtonTarget={"#collapseClothes"} />
                             <div className="collapse" id="collapseClothes">
                                 <form className="form-group">
                                     <ul className="list-group">
@@ -57,8 +55,8 @@ function Women() {
                                             <input className="mx-auto form-control" type="search" placeholder="Search" aria-label="Search" />
                                         </li>
                                         <li className="my-1" >
-                                            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                            <label className="form-check-label mx-1" htmlFor="flexCheckDefault">
+                                            <input className="form-check-input" type="checkbox" value="" id="flexCheckClothes" />
+                                            <label className="form-check-label mx-1" htmlFor="flexCheckClothes">
                                                 Coats (16)
                                             </label>
                                         </li>
@@ -78,9 +76,7 @@ function Women() {
                             </div>
                         </div>
                         <div>
-                            <p>
-                                <AnimButton text={'Size'} typeButton={'collapseSize'} typeButtonTarget={"#collapseSize"}/>
-                            </p>
+                            <AnimButton text={'Size'} typeButton={'collapseSize'} typeButtonTarget={"#collapseSize"} />
                             <div className="collapse" id="collapseSize">
                                 <form className="form-group">
                                     <ul className="list-group">

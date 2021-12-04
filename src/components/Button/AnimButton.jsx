@@ -27,7 +27,7 @@ function AnimButton({ text, typeButton, typeButtonTarget }) {
                     <animated.span style={x} >
                     </animated.span>
                     <animated.span style={
-                        { transform: transform.interpolate(t => `${t} rotate(0deg)`) }
+                        { transform: transform.to(t => `${t} rotate(0deg)`) }
                     }>
                     </animated.span>
                 </div>
