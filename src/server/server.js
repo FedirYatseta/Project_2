@@ -5,7 +5,7 @@ const app = express();
 
 
 
-const start = () => {
+const start = async () => {
   try {
     await mongoose.connect(`mongodb+srv://react:xd!prS.skCj5PSB@cluster0.wex1l.mongodb.net/shop?retryWrites=true&w=majority`)
     app.listen(PORT, () => console.log(`server started on port ${PORT}`))
