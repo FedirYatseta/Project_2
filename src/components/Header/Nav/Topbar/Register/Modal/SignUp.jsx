@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-function SignUp({  }) {
+function SignUp() {
     return (
         <div>
             <form className="px-4 py-3">
@@ -30,12 +30,12 @@ function SignUp({  }) {
                             Remember me
                         </label>
                     </div>
-                    <a className="link" href="#">Forgot password?</a>
+                    <button type="link" className="btn btn-link text-decoration-none" href="#section">Forgot password?</button>
                 </div>
                 <div className="d-grid gap-2">
                     <button type="submit" className="btn btn-success">Sign up</button>
                 </div>
-                <a className=" d-flex my-4 px-0" href="#">Don't have an account? Sign up</a>
+                <button type="link" className="btn btn-link d-flex my-4 px-0" href="#section">Don't have an account? Sign up</button>
             </form>
             <div className="dropdown-divider"></div>
             <span className="d-flex justify-content-center py-3">Or sign in with</span>

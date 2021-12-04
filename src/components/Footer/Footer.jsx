@@ -13,20 +13,20 @@ function Footer() {
                     <div className="col me-5 my-5">
                         <h4 className="footer-title-list">HELP</h4>
                         <ul className="list-group">
-                            <li ><a href="" className="text-decoration-none">Delivery & returns</a></li>
-                            <li ><a href="" className="text-decoration-none">FAQ</a></li>
-                            <li ><a href="" className="text-decoration-none">Track order</a></li>
-                            <li ><a href="" className="text-decoration-none">Contacts</a></li>
-                            <li ><a href="" className="text-decoration-none">Blog</a></li>
+                            <li ><a href="#section" className="text-decoration-none">Delivery & returns</a></li>
+                            <li ><a href="#section" className="text-decoration-none">FAQ</a></li>
+                            <li ><a href="#section" className="text-decoration-none">Track order</a></li>
+                            <li ><a href="#section" className="text-decoration-none">Contacts</a></li>
+                            <li ><a href="#section" className="text-decoration-none">Blog</a></li>
                         </ul>
                     </div>
                     <div className="col mx-5 my-5">
                         <h4 className="footer-title-list">Shop</h4>
                         <ul className="list-group">
-                            <li><a href="">New arrivals</a></li>
-                            <li><a href="">Trending now</a></li>
-                            <li><a href="">Sales</a></li>
-                            <li><a href="">Brands</a></li>
+                            <li><a href="#section">New arrivals</a></li>
+                            <li><a href="#section">Trending now</a></li>
+                            <li><a href="#section">Sales</a></li>
+                            <li><a href="#section">Brands</a></li>
                         </ul>
                     </div>
                     <div className="col mx-5 my-5">
@@ -50,8 +50,8 @@ function Footer() {
                     <div className="col ms-5 my-5">
                         <h4 className="footer-title-list">Download our app</h4>
                         <div className="d-flex">
-                            <img src={apple} className="me-2 my-1"></img>
-                            <img src={android} className="mx-1 my-1"></img>
+                            <img src={apple} className="me-2 my-1" alt="apple"></img>
+                            <img src={android} className="mx-1 my-1" alt="android"></img>
                         </div>
                     </div>
                 </div>

@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import FormReg from './Modal/SignIn'
 import RegModalView from './Modal/ModalSignView'
-import { BrowserRouter, Route, Switch,NavLink } from 'react-router-dom';
-import { Routes } from 'react-router';
 
 function Reg() {
 
@@ -10,7 +8,7 @@ function Reg() {
 
     return (
         <div>
-            <a  type="button" className="text-light text-decoration-none" onClick={() => setModalActive(true)}>Log in / Register</a>
+            <button  type="button" className="btn btn-link text-light text-decoration-none" onClick={() => setModalActive(true)}>Log in / Register</button>
             <RegModalView active={modalActive} setActive={setModalActive} >
                 <FormReg />
             </RegModalView>
