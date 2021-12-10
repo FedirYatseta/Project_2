@@ -8,4 +8,4 @@ const TokenSchema = new Schema({
 })
 
 
-module.exports = model("user", UserSchema);
+module.exports = model("Token", TokenSchema);
