@@ -1,6 +1,7 @@
 
 import './client/css/style.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import {useContext,useEffect} from 'react'
 import Header from './client/components/Header/Header';
 //import Section from './components/Section/Section';
 //import Arrivals from './components/NewArrival/Arrivals';
@@ -14,8 +15,17 @@ import Content from './client/components/Content/Content';
 import NotFound from './client/components/NotFound/NotFound';
 import Women from './client/components/Content/Women/Women';
 import Subscribe from './client/components/SectionSub/Subscribe';
+import {Context} from './index';
+import {observer} from 'mobx-react-lite'
 
 function App() {
+  const {store} = useContext(Context)
+  useEffect ( ()=> {
+    if(localStorage.getItem('token')){
+      store.checkAuth()
+    }
+})
+
   return (
     <div className="wrapper">
       <BrowserRouter>
@@ -42,4 +52,4 @@ function App() {
     </div>
   );
 }
-export default App;
+export default observer(App) ;

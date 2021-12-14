@@ -1,4 +1,4 @@
-* {
+*, input, label {
   padding: 0;
   margin: 0; }
 
@@ -194,15 +194,20 @@ body {
     border-radius: 50%; }
 
   .modal_content_reg {
-    height: 80%;
-    width: 60% !important; }
+    height: auto;
+    width: auto !important; }
 
   .sing-in-item {
     line-height: 0.2;
     font-size: 25px; }
 
-  .sing-in-item-describe {
-    font-size: 10px !important; } }
+  .form-check-label {
+    font-size: 10px !important;
+    padding-left: 2px;
+    margin: auto 5px; }
+
+  .input-item-center {
+    margin: auto 0 auto -12px !important; } }
 @media (min-width: 768px) and (max-width: 991px) {
   /*sm*/
   .sing-in-item {
@@ -210,7 +215,8 @@ body {
     font-size: 25px; }
 
   .sing-in-item-describe {
-    font-size: 10px !important; }
+    font-size: 14px !important;
+    line-height: 5; }
 
   .top-nav-section {
     padding: 2px 5px;
@@ -256,8 +262,16 @@ body {
     color: #FFFFFF; }
 
   .modal_content_reg {
-    height: 90ch;
-    width: 60% !important; } }
+    height: 105ch;
+    width: 80% !important; }
+
+  .form-check-label {
+    font-size: 14px !important;
+    padding-left: 2px;
+    margin: auto 5px; }
+
+  .input-item-center {
+    margin: auto 0 auto -15px !important; } }
 @media (min-width: 992px) and (max-width: 1499px) {
   /*md*/
   .top-nav-section {
@@ -304,8 +318,13 @@ body {
     color: #FFFFFF; }
 
   .modal_content_reg {
-    height: 80ch;
-    width: 40% !important; } }
+    height: 95ch;
+    width: 40% !important; }
+
+  .form-check-label {
+    padding-left: 2px;
+    margin: auto 5px;
+    font-size: 15px !important; } }
 @media (min-width: 1500px) {
   /*lg*/
   .btn-custom {
@@ -602,5 +621,8 @@ body {
   /* identical to box height, or 21px */
   /* gray/700 */
   color: #787A80; }
+
+.add-registration-form {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */
