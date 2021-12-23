@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import  Store  from './client/store/store';
+import { BrowserRouter } from 'react-router-dom';
 
 interface State{
     store: Store,
@@ -18,8 +19,10 @@ export const Context = createContext<State>(
 )
 
 ReactDOM.render(
-    <Context.Provider value={{store}}>
+  
+     <Context.Provider value={{store}}>
          <App />
-    </Context.Provider>
+     </Context.Provider>
+ 
   ,  document.getElementById('root')
 );

@@ -8,10 +8,10 @@ function Subscribe() {
                 <div className="row">
                     <div className="col my-auto">
                         <div className="my-2">
-                            <h2>Subscribe htmlFor updates</h2>
+                            <h2>Subscribe for updates</h2>
                         </div>
                         <div className="my-4">
-                            <h5>Subscribe htmlFor exclusive early sale access and new arrivals.</h5>
+                            <h5>Subscribe for exclusive early sale access and new arrivals.</h5>
                         </div>
                         <div className="my-4">
                             <button className="btn btn-outline-success me-1">Women</button>
@@ -20,7 +20,7 @@ function Subscribe() {
                             <button className="btn btn-outline-success mx-2">Boys</button>
                         </div>
                         <div className="row">
-                            <span> Email</span>
+                            <span>Email</span>
                             <div className="input-group my-3 ">
                                 <input type="text" className="form-control" placeholder="Your working email" aria-label="Recipient's username" aria-describedby="button-addon2" />
                                 <button className="btn btn-outline-secondary" type="button" id="button-addon2">Subscribe</button>

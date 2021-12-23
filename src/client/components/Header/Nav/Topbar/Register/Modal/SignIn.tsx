@@ -1,6 +1,6 @@
 import React, { FC, useContext, useState } from 'react'
 import { Context } from '../../../../../../..'
-
+import { observer } from 'mobx-react-lite'
 const SignIn: FC = () => {
     const [email, setEmail] = useState<string>('')
 
@@ -53,7 +53,7 @@ const SignIn: FC = () => {
                     <button className="btn btn-link" >Forgot password?</button>
                 </div>
                 <div className="d-grid gap-2">
-                    <button
+                <button
                         type="submit"
                         className="btn btn-success"
                         onClick={() => store.login(email, password)}>Sign in</button>
@@ -67,8 +67,8 @@ const SignIn: FC = () => {
             <h1 className="d-flex justify-content-center sing-in-item">Sign up</h1>
                 <h6 className="d-flex justify-content-center text-wrap fs-6 py-4 modal_text_h6 sing-in-item-describe"> Registration takes less than a minute but gives you full control over your orders.</h6>
                     <div className="mb-3">
-                        <label htmlFor="exampleDropdownFormEmail1" className="form-label">Full Name</label>
-                        <input type="name" className="form-control" id="exampleDropdownFormEmail1" placeholder="Your full name" />
+                        <label htmlFor="exampleDropdownForName" className="form-label">Full Name</label>
+                        <input type="name" className="form-control" id="exampleDropdownForName" placeholder="Your full name" />
                     </div>
                     <div className="mb-3">
                         <label htmlFor="exampleDropdownFormEmail1" className="form-label">Email address</label>
@@ -117,4 +117,4 @@ const SignIn: FC = () => {
 
     )
 }
-export default SignIn
+export default observer(SignIn)

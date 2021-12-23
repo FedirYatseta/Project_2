@@ -6,7 +6,9 @@ const Header = () => {
    return (
       <div>
          <div className="header">
-            <Navbar />
+            <React.StrictMode>
+               <Navbar />
+            </React.StrictMode>
          </div>
          <div className="special-offers-section">
             <Offers />

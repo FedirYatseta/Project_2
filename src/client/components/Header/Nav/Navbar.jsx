@@ -6,7 +6,9 @@ const Navbar = () => {
     return (
         <div className="navbar-section">
             <div className="top-navbar-block">
-                <Topbar />
+                <React.StrictMode>
+                    <Topbar />
+                </React.StrictMode>
             </div>
             <div className="navbar-block">
                 <Menu />
